@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>英会話 料金計算機｜英語やり直し診断</title>
+<meta name="description" content="月額料金と使う回数から、1レッスンあたり・1分あたりの料金を計算。入力した数字はどこにも送信されません。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="英語やり直し診断">
+<meta property="og:title" content="英会話 料金計算機｜英語やり直し診断">
+<meta property="og:description" content="月額料金と使う回数から、1レッスンあたり・1分あたりの料金を計算。入力した数字はどこにも送信されません。">
+<meta property="og:locale" content="ja_JP">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<p class="prbar">このサイトには広告（PR）を含みます。<a href="../about/#ads">広告について</a></p>
+<header class="site"><div class="wrap">
+  <a class="logo" href="../">英語やり直し診断</a>
+  <nav><a href="../#quiz">診断</a><a href="../compare/">比較表</a><a href="../calc/">料金計算</a><a href="../guide/">読みもの</a></nav>
+</div></header>
+<main class="wrap">
+<section class="result-head">
+  <h1>料金計算機</h1>
+  <p class="lead">月額料金と、実際に使う回数・時間を入れると、1回あたり・1分あたりの料金が出ます。入力した数字はこの画面の中だけで計算し、どこにも送信・保存しません。</p>
+</section>
+<form class="calc" id="calc" aria-label="料金の計算">
+  <label>サービス<select id="c-svc"><option value="">自分で入力する</option></select></label>
+  <label>月額料金（円）<input id="c-monthly" type="number" inputmode="numeric" min="0" step="10" value="7480"></label>
+  <label>月に使う回数<input id="c-count" type="number" inputmode="numeric" min="1" step="1" value="20"></label>
+  <label>1回あたりの時間（分）<input id="c-min" type="number" inputmode="numeric" min="1" step="1" value="25"></label>
+</form>
+<div class="calc-out" aria-live="polite">
+  <div><span>1回あたり</span><b id="o-per">—</b></div>
+  <div><span>1分あたり</span><b id="o-min">—</b></div>
+  <div><span>月に話す時間</span><b id="o-total">—</b></div>
+</div>
+<p class="note">AI英会話アプリは使い放題のものが多いので、「実際に使う回数」で割ると本当のコストが見えます。オンライン英会話は、受けなかったレッスンの分だけ1回あたりが高くなります。</p>
+</main>
+<footer class="site"><div class="wrap">
+  <nav><a href="../about/">運営者情報・広告について</a><a href="../privacy/">プライバシーポリシー</a></nav>
+  <p>料金や条件は変わることがあります。申し込む前に必ず公式サイトで確かめてください。</p>
+  <p>© 英語やり直し診断</p>
+</div></footer>
+<script src="../assets/data.js"></script>
+<script src="../assets/calc.js"></script>
+</body>
+</html>

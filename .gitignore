@@ -1,0 +1,13 @@
+# 公開してはいけないもの
+.env
+.env.*
+*.pem
+*.key
+notes/
+private/
+# ASPの管理画面から落とした成果レポートなど
+reports/
+*.csv
+# その他
+node_modules/
+.DS_Store
